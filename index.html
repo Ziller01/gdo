@@ -15,7 +15,6 @@
   <body class="bg-black text-white w-screen h-screen flex justify-center items-center text-xl">
     <img src="./media/bg.jpg" class="w-screen h-screen -z-10 fixed object-cover opacity-80" />
     <div class="w-full lg:w-1/2 bg-black/50 rounded-lg shadow-lg shadow-black/50 flex flex-col justify-center items-center">
-      <!-- <img src="./media/logo3.jpg" class="object-cover w-40 border-4 border-black aspect-square rounded-full -mt-20" /> -->
       <video autoplay loop muted class="object-cover w-40 border-4 border-black aspect-square rounded-full -mt-20">
         <source src="./media/video.mp4" type="video/mp4" />
       </video>
@@ -34,18 +33,11 @@
         </div>
       </div>
     </div>
-    <audio id="background-audio" src="./media/sound.mp3" loop></audio>
+    <audio id="background-audio" src="./media/sound.mp3" loop autoplay></audio>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const audio = document.getElementById("background-audio");
-
-        // تحديد مستوى الصوت (50%)
         audio.volume = 0.1;
-
-        // تشغيل الصوت تلقائياً
-        audio.play().catch(error => {
-          console.error("تشغيل الصوت تلقائياً فشل:", error);
-        });
       });
     </script>
   </body>
