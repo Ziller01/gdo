@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pry Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-black text-white w-screen h-screen flex justify-center items-center text-xl">
+    <img src="./media/bg.jpg" class="w-screen h-screen -z-10 fixed object-cover opacity-80" />
+    <div class="w-full lg:w-1/2 bg-black/50 rounded-lg shadow-lg shadow-black/50 flex flex-col justify-center items-center">
+      <!-- <img src="./media/logo3.jpg" class="object-cover w-40 border-4 border-black aspect-square rounded-full -mt-20" /> -->
+      <video autoplay loop muted class="object-cover w-40 border-4 border-black aspect-square rounded-full -mt-20">
+        <source src="./media/video.mp4" type="video/mp4" />
+      </video>
+      <div class="w-full h-full p-5 flex flex-col justify-start items-center gap-5">
+        <h1 class="text-5xl fonts-aref-ruqaa-bold bg-gradient-to-tr from-purple-500 to-blue-500 text-transparent bg-clip-text pb-2">جدو</h1>
+        <p class="text-center fonts-aref-ruqaa-regular bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">إني خيرتك فاختاري ما بين الموت على صدري.. أو فوق دفاتر أشعاري.. اختاري الحب.. أو اللاحب فجبنٌ ألا تختاري.. لا توجد منطقةٌ وسطى ما بين الجنة والنار.. ارمي أوراقك كاملةً.. وسأرضى عن أي قرار.. قولي. انفعلي. انفجري لا تقفي مثل المسمار.. لا يمكن أن أبقى أبداً كالقشة تحت الأمطار اختاري قدراً بين اثنين وما أعنفها أقداري.. مرهقةٌ أنت.. وخائفةٌ وطويلٌ جداً.. مشواري</p>
+        <div class="p-5 flex flex-wrap justify-center items-center gap-5 fonts-raleway-500">
+          <a href="https://www.snapchat.com/add/mahmoud247120" target="_blank" class="py-3 px-5 hover:scale-110 bg-yellow-400/10 text-yellow-400 rounded-lg shadow-lg font-bold">Snapchat</a>
+          <a href="https://www.tiktok.com/@mahmoud._.pry" target="_blank" class="py-3 px-5 hover:scale-110 bg-purple-500/10 text-purple-500 rounded-lg shadow-lg font-bold">TikTok</a>
+          <a href="https://www.facebook.com/profile.php?id=100084089092906" target="_blank" class="py-3 px-5 hover:scale-110 bg-blue-500/10 text-blue-500 rounded-lg shadow-lg font-bold">Facebook</a>
+          <a href="https://www.youtube.com/channel/UCHsLfW0ftJpOOnyIfakXdsQ" target="_blank" class="py-3 px-5 hover:scale-110 bg-red-600/10 text-red-600 rounded-lg shadow-lg font-bold">YouTube</a>
+          <a href="https://www.twitch.tv/mahmoudxkhaled" target="_blank" class="py-3 px-5 hover:scale-110 bg-purple-400/10 text-purple-400 rounded-lg shadow-lg font-bold">Twitch</a>
+          <a href="https://www.roblox.com/users/4997487560/profile" target="_blank" class="py-3 px-5 hover:scale-110 bg-emerald-400/10 text-emerald-400 rounded-lg shadow-lg font-bold">Roblox</a>
+          <a href="https://launcher.store.epicgames.com/u/b8840716cfa14e6590cafdd14d4be9a4" target="_blank" class="py-3 px-5 hover:scale-110 bg-white/10 text-white rounded-lg shadow-lg font-bold">EPIC</a>
+          <a href="https://s.team/p/jqgq-bjbd/mqwgkhbq" target="_blank" class="py-3 px-5 hover:scale-110 bg-sky-600/10 text-sky-600 rounded-lg shadow-lg font-bold">Steam</a>
+        </div>
+      </div>
+    </div>
+    <audio id="background-audio" src="./media/sound.mp3" loop></audio>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("background-audio");
+
+        // تحديد مستوى الصوت (50%)
+        audio.volume = 0.1;
+
+        // تشغيل الصوت تلقائياً
+        audio.play().catch(error => {
+          console.error("تشغيل الصوت تلقائياً فشل:", error);
+        });
+      });
+    </script>
+  </body>
+</html>
